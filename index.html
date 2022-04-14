@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="calculation">
+    <div id="screen">0</div>
+    <div class="section">
+      <input type="button" class="btn" value="7" onclick="inputValue(this)">
+      <input type="button" class="btn" value="8" onclick="inputValue(this)">
+      <input type="button" class="btn" value="9" onclick="inputValue(this)">
+      <input type="button" class="btn" value="+"  onclick="calculation(this)">
+    </div>
+    <div class="section">
+      <input type="button" class="btn" value="4" onclick="inputValue(this)">
+      <input type="button" class="btn" value="5" onclick="inputValue(this)">
+      <input type="button" class="btn" value="6" onclick="inputValue(this)">
+      <input type="button" class="btn" value="-"  onclick="calculation(this)">
+    </div>
+    <div class="section">
+      <input type="button" class="btn" value="1" onclick="inputValue(this)">
+      <input type="button" class="btn" value="2" onclick="inputValue(this)">
+      <input type="button" class="btn" value="3" onclick="inputValue(this)">
+      <input type="button" class="btn" value="*"  onclick="calculation(this)">
+    </div>
+    <div class="section">
+      <input type="button" class="btn" value="0" onclick="inputValue(this)">
+      <input type="button" class="btn" value="00" onclick="inputValue(this)">
+      <input type="button" class="btn" value="." onclick="inputDot(this)">
+      <input type="button" class="btn" value="/"  onclick="calculation(this)">
+    </div>
+    <div class="section">
+      <input type="button" class="btn-bottom" value="ac" onclick="allClear()">
+      <input type="button" class="btn-bottom" value="=" onclick="calculation(this)">
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
